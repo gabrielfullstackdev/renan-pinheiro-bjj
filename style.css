@@ -1,0 +1,299 @@
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: #e63946;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #e63946;
+}
+
+header h1 {
+    color: #e63946;
+    margin: 0;
+    font-size: 32px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* APRESENTAÇÃO PRINCIPAL */
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 40px;
+    max-width: 750px;
+}
+
+.texto-apresentacao {
+    flex: 1;
+    min-width: 0;
+}
+
+.subtitulo {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.apresentacao h2 {
+    color: #ffffff;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* BOTÃO PRINCIPAL */
+.botao {
+    display: inline-block;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 24px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #b8202d;
+}
+
+/* IMAGEM DA APRESENTAÇÃO */
+.imagem-apresentacao {
+    flex: 1;
+    min-width: 0;
+}
+
+.imagem-treino {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+    padding: 50px 40px;
+    border-top: 1px solid #333333;
+    max-width: 900px;
+}
+
+.sobre h2 {
+    color: #e63946;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/* SEÇÃO DE HORÁRIOS */
+.horarios {
+    padding: 50px 40px;
+    border-top: 1px solid #333333;
+}
+
+.horarios h2 {
+    color: #e63946;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.descricao-horarios {
+    color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* CARTÕES DAS TURMAS */
+.lista-turmas {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.turma {
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    background-color: #1b1b1b;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    border-left: 4px solid #e63946;
+}
+
+.turma h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.turma p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* SEÇÃO DE CONTATO */
+.contato {
+    padding: 50px 40px;
+    border-top: 1px solid #333333;
+}
+
+.contato h2 {
+    color: #e63946;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contato > p {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* FORMULÁRIO */
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+#form-contato label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#form-contato input,
+#form-contato textarea {
+    padding: 14px;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#form-contato textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#form-contato input:focus,
+#form-contato textarea:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+#form-contato button {
+    padding: 14px;
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background-color: #b8202d;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .apresentacao h2 {
+        font-size: 32px;
+    }
+
+    .texto-apresentacao,
+    .imagem-apresentacao {
+        width: 100%;
+    }
+
+    .imagem-treino {
+        max-width: 100%;
+    }
+
+    .sobre,
+    .horarios,
+    .contato {
+        padding: 40px 20px;
+    }
+}
+/* RODAPÉ */
+footer {
+    padding: 25px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 14px;
+    margin: 0;
+}

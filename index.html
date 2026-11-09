@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renan Pinheiro BJJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Renan Pinheiro BJJ</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#horarios">Horários</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+
+            <div class="texto-apresentacao">
+
+                <p class="subtitulo">
+                    DISCIPLINA • RESPEITO • EVOLUÇÃO
+                </p>
+
+                <h2>Seu próximo nível começa no tatame.</h2>
+
+                <p>
+                    Conheça a Renan Pinheiro BJJ
+                    e descubra a força do Jiu-Jitsu.
+                </p>
+
+                <a href="#sobre" class="botao">
+                    Conheça a academia
+                </a>
+
+            </div>
+
+            <div class="imagem-apresentacao">
+
+                <img
+                    src="imagens/treino.jpeg"
+                    alt="Treino de Jiu-Jitsu na academia Renan Pinheiro BJJ"
+                    class="imagem-treino"
+                >
+
+            </div>
+
+        </section>
+
+        <section id="sobre" class="sobre">
+
+            <h2>Sobre a academia</h2>
+
+            <p>
+                A Renan Pinheiro BJJ é um espaço dedicado
+                ao aprendizado do Jiu-Jitsu, incentivando
+                a disciplina, o respeito e a evolução
+                de cada aluno dentro e fora do tatame.
+            </p>
+
+        </section>
+
+        <section id="horarios" class="horarios">
+
+            <h2>Nossos treinos</h2>
+
+            <p class="descricao-horarios">
+                Encontre a turma ideal para você.
+            </p>
+
+            <div class="lista-turmas">
+
+                <div class="turma">
+                    <h3>Turma infantil</h3>
+                    <p>Jiu-Jitsu para crianças</p>
+                    <p>18hs as 19hs.</p>
+                </div>
+
+                <div class="turma">
+                    <h3>Turma adulta</h3>
+                    <p>Treinos técnicos e condicionamento</p>
+                    <p>19hs as 20hs</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato" class="contato">
+
+            <h2>Entre em contato</h2>
+
+            <p>
+                Quer conhecer a Renan Pinheiro BJJ?
+                Entre em contato e saiba mais sobre nossos treinos.
+            </p>
+
+            <form id="form-contato" action="contato.php" method="post">
+
+                <label for="nome">Seu nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="email">Seu e-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Como podemos ajudar?"
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Renan Pinheiro BJJ. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
